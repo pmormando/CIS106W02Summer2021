@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-13 02:44:15 PM"/>
+        <attribute name="created" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MDI6MzQ6MDEgUE07Mjg4MA=="/>
+        <attribute name="edited" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MDI6NDQ6MTUgUE07MTsyOTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Lastname" type="String" array="False" size=""/>
+            <declare name="ex1" type="Real" array="False" size=""/>
+            <declare name="ex2" type="Real" array="False" size=""/>
+            <declare name="avgscore" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="avgscore"/>
+            <assign variable="avgscore" expression="(ex1 + ex2)/2"/>
+            <assign variable="lastname" expression="lastname"/>
+            <output expression="&quot;lastname is&quot; &amp; lastname" newline="True"/>
+            <output expression="&quot;avgscore is&quot; &amp; avgscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
