@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-13 02:07:14 PM"/>
+        <attribute name="created" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MTI6MDE6MzkgUE07Mjg4Ng=="/>
+        <attribute name="edited" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MDI6MDc6MTQgUE07MjsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1" type="Real" array="False" size=""/>
+            <declare name="N2" type="Real" array="False" size=""/>
+            <declare name="SUM" type="Real" array="False" size=""/>
+            <declare name="PRODUCT" type="Real" array="False" size=""/>
+            <declare name="DIFFERENCE" type="Real" array="False" size=""/>
+            <input variable="N1"/>
+            <input variable="N2"/>
+            <assign variable="SUM" expression="N1 + N2"/>
+            <assign variable="PRODUCT" expression="N1 * N2"/>
+            <assign variable="DIFFERENCE" expression="N1 - N2"/>
+            <output expression="&quot;SUM IS&quot; &amp; SUM" newline="True"/>
+            <output expression="&quot;PRODUCT IS&quot; &amp; PRODUCT" newline="True"/>
+            <output expression="&quot;DIFFERENCE IS&quot; &amp; DIFFERENCE" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
