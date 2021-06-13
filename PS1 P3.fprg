@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-13 02:47:52 PM"/>
+        <attribute name="created" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MDI6NDU6MjQgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMTM7MDI6NDc6NTIgUE07MTsyOTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gallonsused" type="Real" array="False" size=""/>
+            <declare name="milestravelled" type="Real" array="False" size=""/>
+            <declare name="mpg" type="Real" array="False" size=""/>
+            <input variable="gallonsused"/>
+            <input variable="milestravelled"/>
+            <assign variable="MPG" expression="gallonsused/milestravelled"/>
+            <output expression="&quot;mpg is&quot; &amp; mpg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
