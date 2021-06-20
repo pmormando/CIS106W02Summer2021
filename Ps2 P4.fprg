@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-20 02:41:55 PM"/>
+        <attribute name="created" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMjA7MDI6MzA6NDYgUE07Mjg4Mw=="/>
+        <attribute name="edited" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMjA7MDI6NDE6NTUgUE07MTsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="costofappliance" type="Real" array="False" size=""/>
+            <declare name="costofwarranty" type="Real" array="False" size=""/>
+            <declare name="totalcost" type="Real" array="False" size=""/>
+            <declare name="warranty" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter cost of appliance&quot;" newline="True"/>
+            <input variable="costofappliance"/>
+            <if expression="costofappliance &gt; 1000">
+                <then>
+                    <assign variable="warranty" expression="0.10"/>
+                </then>
+                <else>
+                    <assign variable="warranty" expression="0.05"/>
+                </else>
+            </if>
+            <assign variable="costofwarranty" expression="costofappliance * warranty"/>
+            <assign variable="totalcost" expression="costofwarranty + costofappliance"/>
+            <output expression="&quot;name&quot; &amp; name" newline="True"/>
+            <output expression="&quot;costofappliance&quot; &amp; costofappliance" newline="True"/>
+            <output expression="&quot;costofwarranty&quot; &amp; costofwarranty" newline="True"/>
+            <output expression="&quot;totalcost&quot; &amp; totalcost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
