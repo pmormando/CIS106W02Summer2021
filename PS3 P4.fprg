@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hocke"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-27 10:24:42 PM"/>
+        <attribute name="created" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMjc7MTA6MjA6MDAgUE07Mjg3OA=="/>
+        <attribute name="edited" value="aG9ja2U7REVTS1RPUC1NVVI2SDRUOzIwMjEtMDYtMjc7MTA6MjQ6NDIgUE07MTsyOTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numberofconcerttickets" type="Real" array="False" size=""/>
+            <declare name="priceperticket" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="totalcost" type="Real" array="False" size=""/>
+            <input variable="numberofconcerttickets"/>
+            <if expression="numberofconcerttickets &gt;= 25">
+                <then>
+                    <assign variable="priceperticket" expression="50"/>
+                </then>
+                <else>
+                    <if expression="numberofconcerttickets &gt;= 10 and numberofconcerttickets &lt;= 24">
+                        <then>
+                            <assign variable="priceperticket" expression="70"/>
+                        </then>
+                        <else>
+                            <assign variable="priceperticket" expression="75"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalcost" expression="numberofconcerttickets * priceperticket"/>
+            <output expression="numberofconcerttickets" newline="True"/>
+            <output expression="priceperticket" newline="True"/>
+            <output expression="totalcost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
